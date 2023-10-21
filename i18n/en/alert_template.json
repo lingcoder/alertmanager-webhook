@@ -1,0 +1,4 @@
+{
+  "feishu-template": "Level: S{{.Severity}} {{if .IsRecovered}}Recovered{{else}}Triggered{{end}}\nRule name: {{.RuleName}}{{if .RuleNote}}\nRule remark: {{.RuleNote}}{{end}}\nMetric labels: {{.TagsJSON}}\n{{if .IsRecovered}}Recover time：{{ .LastEvalTime}}{{else}}Trigger time: {{ .TriggerTime}}\nTrigger value: {{.TriggerValue}}{{end}}\nSent time: {{.timestamp}}",
+  "feishu-title": "Alert Notification"
+}

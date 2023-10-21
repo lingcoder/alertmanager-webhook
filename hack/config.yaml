@@ -1,0 +1,16 @@
+# CLI tool, only in development environment.
+# https://goframe.org/pages/viewpage.action?pageId=3673173
+gfcli:
+  build:
+    name: "notifier"
+    arch: "amd64"
+    system: "linux,darwin,windows"
+    mod: ""
+    cgo: 0
+    packSrc: "i18n,config"
+
+  docker:
+    tagName: "prometheus-notifier:latest"
+#    tagPrefixes:
+#      -
+
