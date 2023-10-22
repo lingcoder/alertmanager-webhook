@@ -1,4 +1,0 @@
-{
-  "feishu-template": "级别状态: S{{.Severity}} {{if .IsRecovered}}Recovered{{else}}Triggered{{end}}\n规则名称: {{.RuleName}}{{if .RuleNote}}\n规则备注: {{.RuleNote}}{{end}}\n监控指标: {{.TagsJSON}}\n{{if .IsRecovered}}恢复时间：{{ .LastEvalTime}}{{else}}触发时间: {{ .TriggerTime}}\n触发时值: {{.TriggerValue}}{{end}}\n发送时间: {{.timestamp}}",
-  "feishu-title": "告警通知"
-}

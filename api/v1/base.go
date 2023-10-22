@@ -9,8 +9,8 @@ type BaseReq struct {
 	URL  string `json:"url"`
 }
 
-// Message defines the JSON object send to webhook endpoints.
-type Message struct {
+// WebhookBody defines the JSON object send to webhook endpoints.
+type WebhookBody struct {
 	*Data
 
 	// The protocol version.
