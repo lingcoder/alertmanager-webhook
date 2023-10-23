@@ -36,5 +36,3 @@ func WrapperOpenAPI(s *ghttp.Server) {
 	api.Config.CommonResponseDataField = "Data"
 	api.Config.IgnorePkgPath = true
 }
-
-var users = make(map[string]*ghttp.WebSocket, 0)

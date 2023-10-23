@@ -2,8 +2,6 @@ package feishu
 
 import (
 	"context"
-	"fmt"
-	"github.com/gogf/gf/v2/encoding/gjson"
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/util/gconv"
 	larkcard "github.com/larksuite/oapi-sdk-go/v3/card"
@@ -37,9 +35,6 @@ func (u *sFeishu) Send(ctx context.Context, req *v1.FeishuReq) error {
 		IsRecovered: req.WebhookBody.Status == "resolved",
 		SendingTime: time.Now().Format(time.RFC3339),
 	}
-
-	encodeString := gjson.MustEncodeString(req)
-	fmt.Println(encodeString)
 
 	for i := 0; i < len(alerts); i++ {
 		alert := alerts[i]
