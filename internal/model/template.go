@@ -5,6 +5,7 @@ type WebhookAlert struct {
 	IsRecovered  bool
 	RuleName     string
 	RuleNotes    string
+	Description  string
 	TagsJSON     string
 	LastEvalTime string
 	TriggerTime  string

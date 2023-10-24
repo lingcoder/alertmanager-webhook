@@ -42,6 +42,7 @@ func (u *sFeishu) Send(ctx context.Context, req *v1.FeishuReq) error {
 		webhookAlert.Severity = alert.Labels["severity"]
 		webhookAlert.RuleName = alert.Labels["alertname"]
 		webhookAlert.RuleNotes = alert.Annotations["summary"]
+		webhookAlert.Description = alert.Annotations["description"]
 		webhookAlert.TriggerTime = alert.StartsAt.Format(time.RFC3339)
 		webhookAlert.LastEvalTime = alert.EndsAt.Format(time.RFC3339)
 		webhookAlert.TriggerValue = alert.Annotations["value"]
