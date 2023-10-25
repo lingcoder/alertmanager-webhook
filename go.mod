@@ -2,7 +2,10 @@ module github.com/lingcoder/prometheus-notifier
 
 go 1.21
 
-require github.com/gogf/gf/v2 v2.5.5
+require (
+	github.com/gogf/gf/v2 v2.5.6
+	github.com/larksuite/oapi-sdk-go/v3 v3.0.30
+)
 
 require (
 	github.com/BurntSushi/toml v1.3.2 // indirect
@@ -14,7 +17,6 @@ require (
 	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/grokify/html-strip-tags-go v0.0.1 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
-	github.com/larksuite/oapi-sdk-go/v3 v3.0.30 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
